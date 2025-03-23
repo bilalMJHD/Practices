@@ -1,1 +1,105 @@
-<>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girl Develop It</title>
+    <style>
+        * {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .about p span {
+            color: orange;
+        }
+        .section h1,
+        h2 {
+            color: green;
+            font-weight: bold;
+        }
+
+        .classes table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+        td {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="section logo">
+            <img src="logo.jpg" alt="Girl Develop It">
+        </div>
+        <div class="section about">
+            <h1>About</h1>
+            <p>
+                It can be intimidating for women to learn and ask questions when they are in an
+                <span><strong>extreme minority</strong></span>. While open and welcoming, today's budding developer
+                community is up to <span><strong>91% male</strong></span>. If we can empower more females with the
+                confidence in ther technological capabilites <span><em>we can begin to change this
+                        landscape</em></span>.
+            </p>
+        </div>
+        <div class="section locations">
+            <ul>
+                <li>USA
+                    <ul>
+                        <li><a href="#!">New York</a></li>
+                        <li><a href="#!">Columbus</a></li>
+                        <li><a href="#!">Austin</a></li>
+                        <li><a href="#!">Philly</a></li>
+                    </ul>
+                </li>
+                <li>World
+                    <ul>
+                        <li><a href="#!">Ottawa</a></li>
+                        <li><a href="#!">Sydney</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="section classes">
+            <h2>Upcoming Classes</h2>
+            <table>
+                <tr>
+                    <th>Location</th>
+                    <th>Topic</th>
+                </tr>
+                <tr>
+                    <td>New York</td>
+                    <td>Javascript & JQuery</td>
+                </tr>
+                <tr>
+                    <td>San Francisco</td>
+                    <td>HTML & CSS</td>
+                </tr>
+            </table>
+        </div>
+        <div class="section signup">
+            <h2>Sign Up! </h2>
+            <form action="">
+                <label>Name:<input type="text" name="Name" id="Name"></label><br>
+                <label>Email:<input type="email" name="Email" id="Email"></label><br>
+                <label for="Location">Location:
+                    <select name="Location" id="Location">
+                        <option value="San Francisco">San Francisco</option>
+                        <option value="New York">New York</option>
+                    </select>
+                </label>
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <label><input type="radio" name="gender">Female</label>
+                    <label><input type="radio" name="gender">Male</label>
+                </fieldset>
+                <label>Experience<br><textarea name="Experience"></textarea></label><br>
+                <input type="submit" value="Sign Up">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
