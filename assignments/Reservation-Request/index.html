@@ -1,1 +1,128 @@
-<>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Request</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .btn-group input {
+            font-size: 16px;
+            margin: 0 16px;
+            width: 200px;
+        }
+        .container {
+            border: 5px solid blue;
+            margin: 0 auto;
+            padding: 0 16px 16px 16px;
+            width: 700px;
+        }
+        fieldset legend {
+            color: blue;
+            font-weight: bold;
+        }
+        .form-group label{
+            display: inline-block;
+            margin-bottom: 6px;
+            width: 100px;
+        }
+        .form-group span {
+            color: red;
+        }
+        .section {
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Reservation Request</h1>
+        <form action="" method="post">
+            <div class="section first">
+                <fieldset>
+                    <legend>General Information</legend>
+                    <div class="form-group">
+                        <label for="ArrivalDate">Arrival Date: </label>
+                        <input type="text" name="ArrivalDate" id="ArrivalDate" value="12/39/2016">
+                        <span>Arrival Date is invalid</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Nights">Nights</label>
+                        <input type="text" name="Nights" id="Nights" value="three">
+                        <span>Nights must be a number</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Adults">Adults</label>
+                        <select name="Adults" id="Adults">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Children">Children</label>
+                        <select name="Children" id="Children">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="section second">
+                <fieldset>
+                    <legend>Prefrences</legend>
+                    <div class="form-group">
+                        <label for="RoomType">Room type:</label>
+                        <input type="radio" name="RoomType" id="Standard" value="Standard">
+                        <label for="Standard">Standard</label>
+                        <input type="radio" name="RoomType" id="Business" value="Business">
+                        <label for="Business">Business</label>
+                        <input type="radio" name="RoomType" id="Suite" value="Suite">
+                        <label for="Suite">Suite</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="RoomType">Bed Type:</label>
+                        <input type="radio" name="BedType" id="King" value="King">
+                        <label for="King">King</label>
+                        <input type="radio" name="BedType" id="Double" value="Double">
+                        <label for="Double">Double</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="Smoking" id="Smoking" value="Smoking">
+                        <label for="Smoking">Smoking</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="section third">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div class="form-group">
+                        <label for="Name">Name: </label>
+                        <input type="text" name="Name" id="Name">
+                        <span>Name is required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Email: </label>
+                        <input type="email" name="Email" id="Email" value="graceyahoo.com">
+                        <span>Email address is invalid</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Phone">Phone: </label>
+                        <input type="text" name="Phone" id="Phone" value="123-456-789">
+                        <span>Phone number is invalid</span>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="btn-group">
+                <input type="submit" value="Submit Reservation">
+                <input type="reset" value="Clear">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
